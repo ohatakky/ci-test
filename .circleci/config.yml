@@ -12,7 +12,7 @@ jobs:
       - run:
           name: install
           command: yarn
-          working_directory: ~/project/hello-world-app
+          working_directory: hello-world-app
       - save_cache:
           key: dependency-cache-{{ checksum "hello-world-app/package.json" }}
           paths:
@@ -20,7 +20,7 @@ jobs:
       - run:
           name: build
           command: yarn build
-          working_directory: ~/project/hello-world-app
+          working_directory: hello-world-app
 
       # - store_artifacts:
       #     path: test-results.xml
