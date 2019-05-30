@@ -16,7 +16,7 @@ jobs:
       - save_cache:
           key: dependency-cache-{{ checksum "hello-world-app/yarn.lock" }}
           paths:
-            - ./node_modules
+            - hello-world-app/node_modules
       - run:
           name: build
           command: yarn build
