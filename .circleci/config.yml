@@ -2,7 +2,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/hello-world-app
+    working_directory: ~/ci-test/hello-world-app
     docker:
       - image: circleci/node:latest
     steps:
@@ -19,7 +19,7 @@ jobs:
       - run:
           name: build
           command: yarn build
-          
+
       # - store_artifacts:
       #     path: test-results.xml
       #     prefix: tests
