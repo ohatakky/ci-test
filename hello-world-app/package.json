@@ -12,7 +12,5 @@
     "react-dom": "^16.8.6"
   },
   "license": "ISC",
-  "devDependencies": {
-    "webpack-bundle-analyzer": "^3.3.2"
-  }
+  "devDependencies": {}
 }
