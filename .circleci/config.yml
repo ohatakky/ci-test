@@ -19,7 +19,7 @@ jobs:
       #       - ./node_modules
       - run:
           name: build
-          command: yarn build
+          command: yarn analyze
           working_directory: ~/project/hello-world-app
 
       # - store_artifacts:
