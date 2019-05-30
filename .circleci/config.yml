@@ -2,7 +2,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/ci-test/hello-world-app
+    working_directory: ~/project
     docker:
       - image: circleci/node:latest
     steps:
