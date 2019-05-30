@@ -5,7 +5,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "analyze": "cross-env ANALYZE=1 next build && cat .next/stats.txt"
+    "analyze": "next build && cat .next/stats.txt"
   },
   "dependencies": {
     "next": "^8.1.0",
