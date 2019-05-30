@@ -4,8 +4,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "analyze": "next build && cat .next/stats.txt"
+    "start": "next start"
   },
   "dependencies": {
     "next": "^8.1.0",
