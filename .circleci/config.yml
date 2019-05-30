@@ -23,6 +23,8 @@ jobs:
           working_directory: hello-world-app
   
   hello:
+    docker:
+      - image: circleci/node:latest
     steps:
       - checkout
       - run: echo "hello world"
