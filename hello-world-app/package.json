@@ -4,12 +4,16 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "analyze": "cross-env ANALYZE=1 next build && cat .next/stats.txt"
   },
   "dependencies": {
     "next": "^8.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-bundle-analyzer": "^3.3.2"
+  }
 }
