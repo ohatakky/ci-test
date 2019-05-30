@@ -8,13 +8,13 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          key: dependency-cache-{{ checksum "hello-world-app/package.json" }}
       - run:
           name: install
           command: yarn
           working_directory: ~/project/hello-world-app
       - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          key: dependency-cache-{{ checksum "hello-world-app/package.json" }}
           paths:
             - ./node_modules
       - run:
