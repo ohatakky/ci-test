@@ -2,7 +2,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/project/hello-world-app
+    working_directory: ~/project
     docker:
       - image: circleci/node:latest
     steps:
@@ -12,6 +12,7 @@ jobs:
       - run:
           name: install
           command: yarn
+          working_directory: ~/project/hello-world-app
       # - save_cache:
       #     key: dependency-cache-{{ checksum "package.json" }}
       #     paths:
@@ -19,6 +20,7 @@ jobs:
       - run:
           name: build
           command: yarn build
+          working_directory: ~/project/hello-world-app
 
       # - store_artifacts:
       #     path: test-results.xml
