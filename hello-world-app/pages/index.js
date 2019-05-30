@@ -1,5 +1,5 @@
 import Link from 'next/link'
-export default () => (
+xport default () => (
   <div>
     Hello World.{' '}
     <Link href='/about'>
