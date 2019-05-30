@@ -35,5 +35,5 @@ workflows:
     jobs:
       - hello
       - build:
-        requires:
-          - hello
+          requires:
+            - hello
