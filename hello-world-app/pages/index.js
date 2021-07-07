@@ -1,5 +1,5 @@
 import Link from 'next/link'
-export default () => (
+xport default () => (
   <div>
     Cache For Yarn Install.{' '}
     <Link href='/about'>
